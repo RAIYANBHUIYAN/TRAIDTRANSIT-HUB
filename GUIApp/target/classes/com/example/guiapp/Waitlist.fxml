@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1310.0" style="-fx-background-color: #C3B5EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiapp.WaitlistController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="10.0" prefHeight="100.0" prefWidth="1310.0" style="-fx-background-color: #4A25AF;" text="Waitlist &amp; PreBooking" textFill="#fcf9f9" AnchorPane.bottomAnchor="764.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button layoutX="24.0" layoutY="111.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="101.0" style="-fx-background-color: #DB3129;" text="Back" textFill="#fcfafa" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <Button layoutX="50.0" layoutY="788.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: #0B8A5A;" text="Confirm" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <TableView fx:id="t3" layoutX="306.0" layoutY="311.0" prefHeight="475.0" prefWidth="1210.0" AnchorPane.bottomAnchor="186.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="200.0">
+         <columns>
+            <TableColumn fx:id="as" prefWidth="871.1999980807304" text="Available Spot" />
+            <TableColumn fx:id="pt" minWidth="0.0" prefWidth="309.5999755859375" text="Probable time" />
+         </columns>
+      </TableView>
+      <Label layoutX="52.0" layoutY="739.0" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #C3B5EA;" text="Enter a Spot " AnchorPane.bottomAnchor="100.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="spt" layoutX="448.0" layoutY="711.0" prefHeight="50.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>

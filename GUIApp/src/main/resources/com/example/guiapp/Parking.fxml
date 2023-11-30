@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="864.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiapp.ParkingController">
+    <children>
+        <AnchorPane prefHeight="678.0" prefWidth="1310.0" style="-fx-background-color: #C3B5EA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" prefHeight="100.0" prefWidth="1310.0" style="-fx-background-color: #4A25AF;" text="Parking" textFill="#fcf9f9" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <font>
+                        <Font name="System Bold" size="46.0" />
+                    </font>
+                </Label>
+                <Button layoutX="725.0" layoutY="759.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="67.0" prefWidth="230.0" style="-fx-background-color: #0B8A5A;" text="Confirm" textFill="#fcfcfc" AnchorPane.bottomAnchor="37.799999999999955" AnchorPane.leftAnchor="725.0" AnchorPane.rightAnchor="380.5999999999999">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Button>
+                <Button layoutX="14.0" layoutY="68.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="101.0" style="-fx-background-color: #DB3129;" text="Back" textFill="#fcfafa">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="table1" layoutX="14.0" layoutY="143.0" prefHeight="578.0" prefWidth="1282.0" AnchorPane.bottomAnchor="143.39999999999998" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.800000000000182" AnchorPane.topAnchor="143.0">
+                    <columns>
+                        <TableColumn fx:id="availspot" minWidth="718.0" prefWidth="700.0" text="Available Spot" />
+                        <TableColumn fx:id="time" minWidth="282.0" prefWidth="200.0" text="Time" />
+                        <TableColumn fx:id="price" minWidth="282.0" prefWidth="75.0" text="Price" />
+                    </columns>
+                </TableView>
+                <Button layoutX="297.0" layoutY="759.0" mnemonicParsing="false" onAction="#PreBook" prefHeight="60.0" prefWidth="350.0" style="-fx-background-color: #0B8A5A;" text="Waitlist &amp; Prebooking" textFill="#faf9f9" AnchorPane.bottomAnchor="37.8" AnchorPane.leftAnchor="297.0">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

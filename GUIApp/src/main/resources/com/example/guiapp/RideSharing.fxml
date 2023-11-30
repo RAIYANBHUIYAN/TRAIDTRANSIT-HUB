@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiapp.RideSharingController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="1310.0" style="-fx-background-color: #4A25AF;" text="Ride Sharing" textFill="#fcf9f9" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <font>
+                <Font name="System Bold" size="35.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="-8.0" layoutY="100.0" prefHeight="799.0" prefWidth="1326.0" style="-fx-background-color: #C3B5EA;" AnchorPane.bottomAnchor="-35.200000000000045" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+            <children>
+                <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#Back" prefHeight="58.0" prefWidth="86.0" style="-fx-background-color: #DB3129;" text="Back" textFill="#fcfafa">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="858.0" layoutY="369.0" mnemonicParsing="false" onAction="#Voluntary" prefHeight="82.0" prefWidth="222.0" style="-fx-background-color: #0B8A5A;" text="Voluntary" AnchorPane.leftAnchor="858.0">
+                    <font>
+                        <Font size="32.0" />
+                    </font>
+                </Button>
+                <Button layoutX="370.0" layoutY="370.0" mnemonicParsing="false" onAction="#Monitary" prefHeight="81.0" prefWidth="210.0" style="-fx-background-color: #0B8A5A;" text="Monitary" AnchorPane.leftAnchor="370.0">
+                    <font>
+                        <Font size="34.0" />
+                    </font>
+                </Button>
+                <Label fx:id="ride" alignment="CENTER" layoutX="467.0" layoutY="246.0" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold;" textFill="#ea0c0c" visible="false">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <TextField fx:id="fee" alignment="CENTER" layoutX="641.0" layoutY="139.0" prefHeight="35.0" prefWidth="250.0" promptText="fee per hour" visible="false">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
